@@ -36,7 +36,7 @@ pipeline {
                 sh '''
                 cd "$PROJECT_DIR"
 
-                cat > backend/.env <<EOF
+                cat > Backend/.env <<EOF
 DB_USER=moviehub
 DB_PASSWORD=moviehub123
 DB_HOST=mysql
@@ -44,7 +44,7 @@ DB_NAME=moviehub
 EOF
 
                 echo "Backend .env created successfully"
-                cat backend/.env
+                cat Backend/.env
                 '''
             }
         }
